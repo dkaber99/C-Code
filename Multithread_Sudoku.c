@@ -136,7 +136,7 @@ int main(void)
 	pthread_join(thread5, &box5);
 	pthread_join(thread6, &box6);
 	pthread_join(thread7, &box7);
-	pthread_join(thread9, &box9);
+	pthread_join(thread9, &box9); //should be an 8 for both. Will cause an incorrect result.
 	pthread_join(thread9, &box9);
 
 if((unsigned long) allrows ==1 &&
